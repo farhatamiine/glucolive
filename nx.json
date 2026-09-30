@@ -16,9 +16,7 @@
     {
       "plugin": "@nx/js/typescript",
       "options": {
-        "typecheck": {
-          "targetName": "typecheck"
-        },
+        "typecheck": { "targetName": "typecheck" },
         "build": {
           "targetName": "build",
           "configName": "tsconfig.lib.json",
@@ -38,12 +36,7 @@
         "serveStaticTargetName": "serve-static"
       }
     },
-    {
-      "plugin": "@nx/oxlint",
-      "options": {
-        "targetName": "lint"
-      }
-    },
+    { "plugin": "@nx/oxlint", "options": { "targetName": "lint" } },
     {
       "plugin": "@nx/vitest",
       "options": {
@@ -73,19 +66,10 @@
       }
     }
   ],
-  "nxCloudId": "6abd6919a484af7227966cb1",
+  "nxCloudId": "6abd829c5d4ae19cd72c86d1",
   "analytics": true,
-  "targetDefaults": {
-    "test": {
-      "dependsOn": ["^build"]
-    }
-  },
+  "targetDefaults": { "test": { "dependsOn": ["^build"] } },
   "generators": {
-    "@nx/next": {
-      "application": {
-        "style": "css",
-        "linter": "oxlint"
-      }
-    }
+    "@nx/next": { "application": { "style": "css", "linter": "oxlint" } }
   }
 }
